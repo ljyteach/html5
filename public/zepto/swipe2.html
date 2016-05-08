@@ -16,9 +16,19 @@
 <body>
 	<div class="box"></div>
 	<script type="text/javascript" src="script/zepto.min.js"></script>
+	<script type="text/javascript" src="script/zepto-touch.js"></script>
 	<script type="text/javascript">
-		$(".box").click(function(){
-			$(this).css("background-color","green");  //click移动端有0.3秒的延迟
+		$(".box").swipeUp(function(){
+			$(this).css("background-color","green"); 
+		})
+		$(".box").swipeDown(function(){
+			$(this).css("background-color","yellow"); 
+		})
+		$(".box").swipeLeft(function(){
+			$(this).css("background-color","blue"); 
+		})
+		$(".box").swipeRight(function(){
+			$(this).css("background-color","black"); 
 		})
 	</script>
 </body>

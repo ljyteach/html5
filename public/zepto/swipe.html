@@ -16,8 +16,9 @@
 <body>
 	<div class="box"></div>
 	<script type="text/javascript" src="script/zepto.min.js"></script>
+	<script type="text/javascript" src="script/zepto-touch.js"></script>
 	<script type="text/javascript">
-		$(".box").click(function(){
+		$(".box").swipe(function(){
 			$(this).css("background-color","green");  //click移动端有0.3秒的延迟
 		})
 	</script>

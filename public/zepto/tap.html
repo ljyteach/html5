@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<style type="text/css">
 		
 		.box{
@@ -16,8 +15,9 @@
 <body>
 	<div class="box"></div>
 	<script type="text/javascript" src="script/zepto.min.js"></script>
+	<script type="text/javascript" src="script/zepto-touch.js"></script>
 	<script type="text/javascript">
-		$(".box").click(function(){
+		$(".box").tap(function(){
 			$(this).css("background-color","green");  //click移动端有0.3秒的延迟
 		})
 	</script>
